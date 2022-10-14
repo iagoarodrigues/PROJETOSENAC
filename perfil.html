@@ -1,0 +1,241 @@
+<!DOCTYPE html> <!-- versao do documento -->
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8"> <!-- definir mapa de caracteres ou codificação de caracteres -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- indicar compatibilidade com internet explorer -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- definir área visível largura -->
+        <link rel="icon" href="imagens/favicon.png" /> <!-- favicon -->
+        <title>Perfil</title> <!-- título da página -->
+        <!-- links para estilos css -->
+        <link rel="stylesheet" href="css/estilo.css" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous" />
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+            
+            function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Contry', 'Mhl'],
+              ['Música',25.0],
+              ['Futebol',25.0],
+              ['Wild Rift',15.0],
+              ['Animes',20.0],
+              ['Séries',15.0]
+            ]);
+            
+            var options = {
+              title:'',
+              is3D:true
+            };
+            
+            var chart = new google.visualization.PieChart(document.getElementById('myChart'));
+              chart.draw(data, options);
+            }
+            </script>
+    </head>
+
+    <body>
+    <main id="tela_perfil">
+        <span id="topo"></span> <!-- usar id para fazer ancora local -->
+
+        <header id="cabecalho"> <!-- cabeçalho -->
+
+        <figure>
+            <!-- FOTO DO PERFIL -->
+            <img
+                id="foto_perfil"
+                src="imagens/iago.jpg"
+                width="200px"
+                alt="Foto do Perfil"
+            />
+            <figcaption>Perfil do Iago</figcaption>
+        </figure>
+        <div id="dados">
+            <h1> Iago Alves Rodrigues </h1>
+
+            <!-- <hr/> linha horizontal -->
+
+            <blockquote> &#10077; Saudações vascaínas, seja bem-vindo(a) ao meu perfil  &#10077;</blockquote>
+    
+            <div id="locais">
+                <span class="localizacao">Maré</span>,
+                <span class="localizacao">RJ</span> &sdot;
+                <span class="localizacao">Brasil</span>
+
+                <nav id="menu_top">
+                    <a href="#info-contatos">Informações de Contato</a>
+                    <a href="projetos.html">Projetos</a>
+                </nav>
+            </div>
+        </div>
+        </header> <!-- /cabeçalho -->
+
+        <section id="perfil"> <!-- section perfil -->
+
+        <article id="sobre">
+
+            <h2>Sobre mim</h2>
+
+            <p>“Meu nome é Iago,
+                tenho 24 anos,sou vascaino e morador da Maré. 
+                Eu estou solteiro e não tenho filhos.
+                Estudo no Colégio Santo Inácio em botafogo,
+                faço Técnico de informática. 
+                Eu amo música e arte no geral,amo futebol,animes e séries,
+                me exercicito regularmente.
+                Atualmente estou estagiando aos
+                sábados em um centro comunitário que
+                ensina informática básica para idosos e
+                deficientes visuais.
+                </p>
+        
+        </article>
+
+        <article id="experiencia">
+
+            <h2>Experiência</h2>
+
+            <ol type="1" start="1">
+                <li>CLAC - Centro Lions de Ação Comunitária - <i>Estágiario - AGO/22 - DEZ/22</i></li>
+                <li>Marinha do Brasil - Marinheiro - <i>FEV/16 - MAR/19</i></li>
+                <li>Instituto Brasileiro de Geografia e Estatística - <i>Jovem Aprendiz - JUN/14 - DEZ/15</i></li>
+            </ol>
+
+        </article>
+
+        <article id="formacao">
+        
+            <h2>Formação</h2>
+
+            <ul type="circle"> <!-- disc square circle -->
+                <li>Técnico em Informática - <i>Colégio Santo Inácio: FEV/21 - DEZ/22</i></li>
+                <li>Ensino Médio Regular - <i>Colégio Estadual Infante Dom Henrique: FEV/13 - DEZ/15 </i></li>
+            </ul>
+
+        </article>
+
+        <article id="artistas-favoritos">
+            <h2>Artistas Favoritos</h2>
+            <div class="card-deck">
+              <div class="card">
+                <img class="card-img-top" src="imagens/bk.jpg" alt="Imagem de capa do card" width="250px" height="250px">
+                <div class="card-body">
+                  <h5 class="card-title">BK</h5>
+                  <p class="card-text">
+                    <ul>
+                        <li>O Show Nunca Acaba</li>
+                        <li>Megazord</li>
+                        <li>Antes dos Gigantes Gigantes Chegarem</li>
+                        <li>Julius</li>
+                        <li>Quadros</li>
+                     </ul>
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="imagens/kanye.webp" alt="Imagem de capa do card" width="250px" height="250px">
+                <div class="card-body">
+                  <h5 class="card-title">Kanye West</h5>
+                  <p class="card-text">
+                    <ul>
+                      <li>Devil In A New Dress</li>
+                      <li>Ghost Town</li>
+                      <li>Saint Pablo</li>
+                      <li>Violent Crimes</li>
+                      <li>Stronger</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="imagens/kendrick.webp" alt="Imagem de capa do card" width="250px" height="250px">
+                <div class="card-body">
+                  <h5 class="card-title">Kendrick Lamar</h5>
+                  <p class="card-text">
+                    <ul>
+                      <li>Money Trees</li>
+                      <li>PRIDE</li>
+                      <li>United in Grief</li>
+                      <li>Alright</li>
+                      <li>LOVE</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </article>
+
+        <article id="hobbies">
+
+            <h2>Hobbies</h2>
+          <div class="Hobbies">
+             <div id="myChart" style="width:400px; height:400px;">
+          </div>
+        </article>
+
+        <article id="info-contatos">
+
+            <!-- <hr id="contato"> -->
+            <h2>Formulário de Contato</p2>
+            
+                <div class="container">
+                    <div class="content">
+                      <div class="left-side">
+                        <div class="address details">
+                            <img src="imagens/github.png" width="50px" alt="logo-github">
+                          <div class="topic"><a href="https://github.com/iagoarodrigues" target="_blank" rel="noopener">GitHub</a></div>
+                        </div>
+                        <div class="phone details">
+                          <i class="fas fa-phone-alt"><a href=""></a></i>
+                          <div class="topic"><a href="https://github.com/iagoarodrigues" target="_blank" rel="noopener">WhatsApp</a></div>
+                        </div>
+                        <div class="email details">
+                          <i class="fas fa-envelope"></i>
+                          <div class="topic"><a href="mailto:iagomb991@gmail.com" target="_blank" rel="noopener">Email</a></div>
+                        </div>
+                      </div>
+                      <div class="right-side">
+                        <div class="topic-text">Envie sua mensagem</div>
+                        <p id="prg">
+                          Se você tiver algum trabalho ou qualquer tipo de dúvida, entre em contato conosco.
+                        </p>
+                        <form action="#">
+                          <div class="input-box">
+                            <input type="text" placeholder="Digite seu nome" />
+                          </div>
+                          <div class="input-box">
+                            <input type="text" placeholder="Digite seu email" />
+                          </div>
+                          <div class="input-box message-box">
+                            <textarea placeholder="Digite sua mensagem"></textarea>
+                          </div>
+                          <div class="button">
+                            <input type="button" value="Enviar" />
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+        </article>
+
+        </section> <!-- /perfil -->
+
+        <footer id="rodape">
+            <nav id="menu_rodape">
+                <ul> <!-- linkss para um menu -->
+                    <li><a id="ir_para_topo" href="#topo"> &uarr; Ir para o topo</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#competencias">Habilidades</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                </ul>
+            </nav>
+            <p>Desenvolvido por Iago A. Rodrigues &copy 2022</p>
+        </footer>
+
+    </body>
+    </main>
+</html>
